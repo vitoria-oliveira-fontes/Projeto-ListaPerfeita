@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../icones/icone carrinho de compra azul.png" type="image/x-icon">
+  <title> Lista Compra Inteligente </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="menu-superior">
+          <button class="icone-menu">☰</button>
+          <h1>Sugestão Inteligente</h1>
+        </div>
+        <input type="text" placeholder="Buscar produtos" class="input-buscar">
+      </header>
+    
+      <main>
+        <section class="produtos">
+          <h2>Produtos</h2>
+          <div class="produto">
+            <span>🍚 Arroz Parboilizado</span>
+            <button class="botao-adicionar" onclick="adicionarAoCarrinho('Arroz Parboilizado')">Adicionar</button>
+          </div>
+          <div class="produto">
+            <span>🫘 Feijão Carioca</span>
+            <button class="botao-adicionar" onclick="adicionarAoCarrinho('Feijão Carioca')">Adicionar</button>
+          </div>
+          <div class="produto">
+            <span>🧂 Açúcar Refinado</span>
+            <button class="botao-adicionar" onclick="adicionarAoCarrinho('Açúcar Refinado')">Adicionar</button>
+          </div>
+        </section>
+      </main>
+    
+      <footer>
+        <div class="menu-rodape">
+          <button onclick="window.location.href='index.html'">🏠<br>Início</button>
+          <a href="../Tela de agendamento de compra/index.html">
+          <button>🗓️<br>Agendar</button>
+          </a>
+          <button onclick="window.location.href='lista.html'">🛒<br>Carrinho</button>
+          <a href="../Tela de perfil do usuario/index.html">
+          <button>👤<br>Perfil</button>
+        </a>
+        </div>
+      </footer>
+      <script src="app.js"></script>
+</body>
+</html>

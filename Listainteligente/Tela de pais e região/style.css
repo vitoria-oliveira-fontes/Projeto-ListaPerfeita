@@ -1,0 +1,45 @@
+
+body{
+    background-color: #d9e8e8;
+}
+.container {
+    width: 100%;
+  }
+  
+  .linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .paises, .regiao {
+    flex: 1;
+  }
+  
+  .paises {
+    text-align: left;
+  }
+  
+  .regiao {
+    text-align: right;
+  }
+
+  .conteiner {
+    text-align: center;
+  }
+  
+  .centralizado {
+    margin: 0 auto;
+    width: 150px;
+    padding: 6px;
+    border: none;
+    border-radius: 25px;
+    background-color: #28275c;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .centralizado:hover{
+    background-color: #334a7a;
+  }

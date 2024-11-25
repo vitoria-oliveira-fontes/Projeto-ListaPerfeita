@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icones/icone carrinho de compra azul.png" type="image/x-icon">
+    <title> Lista de Compra Inteligente </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div>Menu</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar produtos">
+        </div>
+        <button>🔍</button>
+        <div>Opções</div>
+    </div>
+    <div class="content">
+        <div class="purchase-summary">
+            <h3>Gasto total de outubro: R$ 0</h3>
+            <p>Aqui fica seu gasto mensal, você pode alterar o valor a qualquer momento</p>
+            <button id="open-modal-btn">Definir orçamento</button>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <h2>Definir um orçamento</h2>
+                <label for="orcamento">Orçamento máximo</label>
+                <div class="input-group">
+                    <span>R$</span>
+                    <input type="number" id="orcamento" placeholder="0">
+                </div>
+                <p>
+                    Defina um valor para o seu gasto mensal. Isso não impede suas compras, mas vamos informar quando suas despesas estiverem próximas a esse valor.
+                </p>
+                <div class="modal-actions">
+                    <button id="cancel-btn" class="cancel-btn">Cancelar</button>
+                    <button id="save-btn" class="save-btn">Definir orçamento</button>
+                </div>
+            </div>
+        </div>
+        <div class="purchase-history">
+            <div class="purchase-item">
+                <img src="../icones/icone fralda confort.webp" alt="Produto">
+                <div>
+                    <strong>Fralda confort</strong>
+                    <p>COMPRAS NO NOSSO ATACAREJO</p>
+                </div>
+                <div>
+                    <p>QTD: 5</p>
+                    <p>V.UNT: 5,00</p>
+                    <p>V.FINAL: R$ 25,00</p>
+                </div>
+            </div>
+            <div class="purchase-item">
+                <img src="../icones/icone fralda confort.webp" alt="Produto">
+                <div>
+                    <strong>Fralda confort</strong>
+                    <p>COMPRAS NO NOSSO ATACAREJO</p>
+                </div>
+                <div>
+                    <p>QTD: 5</p>
+                    <p>V.UNT: 5,00</p>
+                    <p>V.FINAL: R$ 25,00</p>
+                </div>
+            </div>
+        </div>
+        <div class="total-value">Valor total das compras: R$ 50,00</div>
+    </div>
+    <script src="style.js"></script>
+</body>
+</html>

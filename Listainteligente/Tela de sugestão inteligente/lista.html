@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../icones/icone carrinho de compra azul.png" type="image/x-icon">
+  <title>Lista de Compra Inteligente </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <h1>Lista</h1>
+  </header>
+
+  <main>
+    <section id="lista-itens">
+      <!-- Itens serão carregados dinamicamente aqui -->
+    </section>
+    <button id="limpar-lista">Limpar Lista</button>
+  </main>
+
+  <footer>
+    <div class="menu-rodape">
+      <button onclick="window.location.href='index.html'">🏠<br>Início</button>
+      <a href="../Tela de agendamento de compra/index.html"><button>🗓️<br>Agendar</button></a>
+      <button onclick="window.location.href='lista.html'">🛒<br>Carrinho</button>
+      <button>👤<br>Perfil</button>
+    </div>
+  </footer>
+
+  <script>
+    // Carregar itens da lista de compras do localStorage
+    const listaDeCompras = JSON.parse(localStorage.getItem('listaDeCompras')) || [];
+    const listaContainer = document.getElementById('lista-itens');
+
+    function renderizarLista() {
+      if (listaDeCompras.length === 0) {
+        listaContainer.innerHTML = '<p>Sua lista está vazia.</p>';
+        return;
+      }
+      listaContainer.innerHTML = listaDeCompras
+        .map(item => `<div>${item} <button onclick="removerItem('${item}')">❌</button></div>`)
+        .join('');
+    }
+
+    function removerItem(item) {
+      const index = listaDeCompras.indexOf(item);
+      if (index > -1) {
+        listaDeCompras.splice(index, 1);
+        localStorage.setItem('listaDeCompras', JSON.stringify(listaDeCompras));
+        renderizarLista();
+      }
+    }
+
+    document.getElementById('limpar-lista').addEventListener('click', () => {
+      localStorage.removeItem('listaDeCompras');
+      listaDeCompras.length = 0;
+      renderizarLista();
+    });
+
+    renderizarLista();
+  </script>
+</body>
+</html>

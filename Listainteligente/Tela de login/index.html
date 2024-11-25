@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icones/icone carrinho de compra azul.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title> Lista de compra inteligente </title>
+</head>
+<body>
+    <div class="container">
+        <h1> Lista de Compra <span class="ultima-palavra"> inteligente</span></h1>
+        <!--imagem do ícone do carrinho de compra do site-->
+        <div class="icone">
+            <img src="../icones/icone carrinho de compra azul.png" alt="icone de carrinho de compra">
+        </div>
+        <!--Formulario para emviar dados de login-->
+        <form action="/Login" method="post">
+            <div class="entrada">
+                <!--login do usuario-->
+                <label for="nome"> Login </la bel>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu usuário">
+            </div>
+            <div class="entrada">
+                <!--senha de login do usuario-->
+                <label for="senha"> Senha </label>
+                <input type="password" id="senha" required placeholder="Digite sua senha">
+            </div>
+            <!--link caso o usuario esqueça a sua senha-->
+            <a href="#"> Esqueci a senha </a>
+            <!--agrupa os botões de cadastro e entrar-->
+            <div class="grupo-botoes">
+                <a href="../Tela de cadastro/index.html">
+                <button type="button" class="btn-cadastro"> Cadastro </button>
+                </a>
+                <a href="../Tela de bem-vindos explicação do site/index.html">
+                <button type="submit" class="btn-entrar"> Entrar </button>
+                </a>
+            </div>
+            <!--botão de entrar com o Google-->
+            <div class="botao-g">
+                <button type="button" class="social-button">
+                    <img src="../icones/icone do Google.webp" alt="icone do Google"> Continuar com o Google<div class="espaco-vazio">...</div>        
+                </button>
+            </div>
+            <!--botão de entrar com o Facebook-->
+            <div class="botao-g">
+                <button type="button" class="social-button">
+                    <img src="../icones/icone do Facebook.webp"> Continuar com o Facebook         
+                </button> 
+            </div>
+        </form>
+    </div>
+</body>
+</html> 

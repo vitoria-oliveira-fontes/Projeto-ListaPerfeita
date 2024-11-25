@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.conteiner{
+    display: flex;
+    font-size: 2em;
+    color: #2E2E2E;
+    margin-bottom: 20px;
+    flex-direction: column;
+    max-width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+ 
+h1 {
+    font-size: 2em;
+    color: #2E2E2E;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contente{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.secao-esquerda{
+    display: flex;
+    width: 45%;
+    font-size: 1.2em;
+    color: #4F4F4F;
+    
+}
+
+.secao-direitar{
+    display: flex;
+    font-size: 1em;
+    color: #4F4F4F;
+    background-color: #F9F9F9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+}
+
+.recurso{
+    display: flex;
+    align-items: center;
+    background-color: #E5E5E5;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 79%;
+}
+
+.recurso img{
+    width: 50px;
+    height: 65px;
+    margin-right: 15px;
+}
+
+.recurso p{
+    font-size: 1em;
+    color: #333333;
+}
+
+button.start{
+    display: flex;
+    margin-top: 29px;
+    padding: 10px 25px;
+    font-size: 1.2em;
+    color: #FFF;
+    background-color: #1d1c57;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    left: 45%;
+}
+
+button.start:hover{
+    background-color: #06335e;
+}
+
+@media (max-width: 450px){
+    h1{
+        font-size: 1.3em;
+    }
+
+    .conteiner{
+        display: flex;
+        font-size: 2em;
+        color: #2E2E2E;
+        text-align: center;
+        justify-content: center;
+}
+
+    .contente{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .secao-esquerda p {
+        display: flex;
+        font-size: 19px;
+        box-sizing: border-box;
+        padding: 1px;
+        margin: 0;
+        width: 100%;
+    }
+
+    button.start{
+        left: 36%;
+    }
+}

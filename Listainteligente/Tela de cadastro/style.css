@@ -1,0 +1,167 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #e0f7f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    background-color: #f0f8ff;
+    width: 460px;
+    padding: 40px;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-container{
+    text-align: center;
+}
+
+.container .icone{
+    width: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.grupo-formulario{
+    margin-bottom: 30px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"]{
+    text-align: center;
+    width: 100%;
+    padding: 9px;
+    border: 1px solid  #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1d1c57;
+    cursor: pointer;
+    color: white;
+}
+
+button[type="submit"]
+button[type="button"] {
+    color: white;
+}
+
+.termos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.termos input[type="checkbox"]{
+    margin-right: 10px;
+}
+
+@media (max-width: 450px){
+    body{
+        font-family: Arial, sans-serif;
+        background-color: #e0f7f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .container{
+        display: flex;
+        width: 100%;
+        padding: 0;
+        box-shadow: none;
+        border-radius: 0;
+        background-color: #e0f7f9;
+        max-width: 45px;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .form-container{
+        text-align: center;
+
+    }
+
+    .container .icone{
+        width: 100px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .grupo-formulario{
+        margin-bottom: 25px;
+        width: 310px;
+        
+    }
+
+    label{
+        display: flex;
+        margin-bottom: 5px;
+        justify-content: center;
+        font-weight: bold;
+    }
+
+    .termos .frase{
+        font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="email"]{
+        text-align: center;
+        width: 100%;
+        padding: 7px;
+        border: 1px solid  #ccc;
+        border-radius: 25px;
+        box-sizing: border-box;
+    }
+    
+    .termos{
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .botoes{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    
+    button{
+        padding: 8px 19px;
+        border: none;
+        border-radius: 30px;
+        background-color: #1d1c57;
+        color: white;
+        width: 90px;
+    }
+    
+    button[type="submit"]
+    button[type="button"] {
+        color: white;
+    }
+}
