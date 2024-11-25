@@ -1,8 +1,6 @@
-# Lista de Compras Inteligente
+# Lista Perfeita
 
-## Objetivo
-
-Um site onde as pessoas podem criar, organizar e compartilhar listas de compras. O sistema sugere itens com base em compras anteriores e categoriza produtos por tipo, ajudando os usuários a economizar dinheiro e tempo.
+O ListaPerfeita é uma plataforma de listas de compras inteligente que ajuda você a organizar suas compras de forma prática e eficiente.
 
 ## 📑 Funcionalidades
 
